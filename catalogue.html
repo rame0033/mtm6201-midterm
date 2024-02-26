@@ -14,131 +14,60 @@
 </head>
 
 <body>
-    <header>
-        <div class="masthead">
-            <!-- Logo -->
-            <div class="logowrap">
-                <img src="images/logos/logo_fashion.svg" alt="Fashion Logo">
-            </div>
-
-            <!-- Adding checkbox prompt for hamburger menu -->
-            <input type="checkbox" id="check">
-            <label for="check" class="icon">
-                <!-- Put i-class here for menu -->
-                <!-- Put i-class here for close button -->
-            </label>
-
-            <!-- Navigation -->
-            <nav>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="catalogue.html">Catalogue</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="sign-up.html">Sign Up</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-       <h1>OUR CATALOGUE</h1>
-
-       <section class="new-arrivals">
-        <h2>New Arrivals</h2>
-
-        <!-- Hoodies -->
-        <div class="card card1">
-            <div class="cataloguepic">
-                <picture class="piccard">
-                    <source srcset="images/hoodie.png" media="(min-width:1030px)" />
-
-                    <source srcset="images/hoodie_tablet.png" media="(min-width:760px)" />
-
-                    <source srcset="images/hoodie_mobile.png" media="(min-width:320px)" />
-
-                    <img src="images/hoodie.png" alt="Hoodies & Sweatshirt" class="cardpic">
-                </picture>
-            </div>
-            <div class="txtcard">
-                <div class="title">
-                    <h3>Hoodies & Sweatshirt</h3>
-                    <p>Explore Now!</p>
+    <div class="container">
+        <ul class="skip-links">
+            <li><a href="#menu">Skip to main navigation</a></li>
+            <li><a href="#main">Skip to main content</a></li>
+        </ul>
+        <header>
+            <div class="masthead">
+                <!-- Logo -->
+                <div class="logowrap">
+                    <img src="images/logos/logo_fashion.svg" alt="Fashion Logo">
                 </div>
-                <div class="arrow">
-                    <!-- Put arrow here -->
-                </div>
+
+                <!-- Adding checkbox prompt for hamburger menu -->
+                <input type="checkbox" id="check">
+                <label for="check" class="icon" aria-controls="menu">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    <i class="fa-solid fa-xmark" id="close"></i>
+                </label>
+
+                <!-- Navigation -->
+                <nav id="menu">
+                    <ul class="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalogue.html">Catalogue</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="sign-up.html">Sign Up</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </header>
+    </div>
 
-        <!-- Coats -->
-        <div class="card card2">
-            <div class="cataloguepic">
-                <picture class="piccard">
-                    <source srcset="images/coats.png" media="(min-width:1030px)" />
+    <main id="main">
+        <h1>OUR CATALOGUE</h1>
 
-                    <source srcset="images/coats_tablet.png" media="(min-width:760px)" />
+        <section class="new-arrivals">
+            <h2>New Arrivals</h2>
 
-                    <source srcset="images/coats_mobile.png" media="(min-width:320px)" />
-
-                    <img src="images/coats.png" alt="Coats & Parkas" class="cardpic">
-                </picture>
-            </div>
-            <div class="txtcard">
-                <div class="title">
-                    <h3>Coats & Parkas</h3>
-                    <p>Explore Now!</p>
-                </div>
-                <div class="arrow">
-                    <!-- Put arrow here -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Tees -->
-        <div class="card card3">
-            <div class="cataloguepic">
-                <picture class="piccard">
-                    <source srcset="images/tees.png" media="(min-width:1030px)" />
-
-                    <source srcset="images/tees_tablet.png" media="(min-width:760px)" />
-
-                    <source srcset="images/tees_mobile.png" media="(min-width:320px)" />
-
-                    <img src="images/tees.png" alt="Tees & T-Shirt" class="cardpic">
-                </picture>
-            </div>
-            <div class="txtcard">
-                <div class="title">
-                    <h3>Tees & T-Shirt</h3>
-                    <p>Explore Now!</p>
-                </div>
-                <div class="arrow">
-                    <!-- Put arrow here -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="youngs">
-        <h2>Young's Favourite</h2>
-
-        <div class="favecard">
-
-            <!-- Trending on Instagram card -->
+            <!-- Hoodies -->
             <div class="card card1">
                 <div class="cataloguepic">
                     <picture class="piccard">
+                        <source srcset="images/hoodie.png" media="(min-width:1030px)" />
 
-                        <source srcset="images/trending.png" media="(min-width:760px)" />
+                        <source srcset="images/hoodie_tablet.png" media="(min-width:760px)" />
 
-                        <source srcset="images/trending_mobile.png" media="(min-width:320px)" />
+                        <source srcset="images/hoodie_mobile.png" media="(min-width:320px)" />
 
-                        <img src="images/trending.png" alt="Trending on Instagram" class="cardpic">
+                        <img src="images/hoodie.png" alt="Hoodies & Sweatshirt" class="cardpic">
                     </picture>
                 </div>
                 <div class="txtcard">
                     <div class="title">
-                        <h3>Trending on Instagram</h3>
+                        <h3>Hoodies & Sweatshirt</h3>
                         <p>Explore Now!</p>
                     </div>
                     <div class="arrow">
@@ -147,21 +76,22 @@
                 </div>
             </div>
 
-            <!-- All under 40 card -->
+            <!-- Coats -->
             <div class="card card2">
                 <div class="cataloguepic">
                     <picture class="piccard">
+                        <source srcset="images/coats.png" media="(min-width:1030px)" />
 
-                        <source srcset="images/under40.png" media="(min-width:760px)" />
+                        <source srcset="images/coats_tablet.png" media="(min-width:760px)" />
 
-                        <source srcset="images/under40_mobile.png" media="(min-width:320px)" />
+                        <source srcset="images/coats_mobile.png" media="(min-width:320px)" />
 
-                        <img src="images/under40.png" alt="All under forty dollars" class="cardpic">
+                        <img src="images/coats.png" alt="Coats & Parkas" class="cardpic">
                     </picture>
                 </div>
                 <div class="txtcard">
                     <div class="title">
-                        <h3>All Under $40</h3>
+                        <h3>Coats & Parkas</h3>
                         <p>Explore Now!</p>
                     </div>
                     <div class="arrow">
@@ -169,58 +99,138 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+
+            <!-- Tees -->
+            <div class="card card3">
+                <div class="cataloguepic">
+                    <picture class="piccard">
+                        <source srcset="images/tees.png" media="(min-width:1030px)" />
+
+                        <source srcset="images/tees_tablet.png" media="(min-width:760px)" />
+
+                        <source srcset="images/tees_mobile.png" media="(min-width:320px)" />
+
+                        <img src="images/tees.png" alt="Tees & T-Shirt" class="cardpic">
+                    </picture>
+                </div>
+                <div class="txtcard">
+                    <div class="title">
+                        <h3>Tees & T-Shirt</h3>
+                        <p>Explore Now!</p>
+                    </div>
+                    <div class="arrow">
+                        <!-- Put arrow here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="youngs">
+            <h2>Young's Favourite</h2>
+
+            <div class="favecard">
+
+                <!-- Trending on Instagram card -->
+                <div class="card card1">
+                    <div class="cataloguepic">
+                        <picture class="piccard">
+
+                            <source srcset="images/trending.png" media="(min-width:760px)" />
+
+                            <source srcset="images/trending_mobile.png" media="(min-width:320px)" />
+
+                            <img src="images/trending.png" alt="Trending on Instagram" class="cardpic">
+                        </picture>
+                    </div>
+                    <div class="txtcard">
+                        <div class="title">
+                            <h3>Trending on Instagram</h3>
+                            <p>Explore Now!</p>
+                        </div>
+                        <div class="arrow">
+                            <!-- Put arrow here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All under 40 card -->
+                <div class="card card2">
+                    <div class="cataloguepic">
+                        <picture class="piccard">
+
+                            <source srcset="images/under40.png" media="(min-width:760px)" />
+
+                            <source srcset="images/under40_mobile.png" media="(min-width:320px)" />
+
+                            <img src="images/under40.png" alt="All under forty dollars" class="cardpic">
+                        </picture>
+                    </div>
+                    <div class="txtcard">
+                        <div class="title">
+                            <h3>All Under $40</h3>
+                            <p>Explore Now!</p>
+                        </div>
+                        <div class="arrow">
+                            <!-- Put arrow here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
- <footer>
-    <div class="footwrap">
-        <div class="row1">
-            <div class="copyright">
-                <h1>FASHION</h1>
-                <p>Complete your style with awesome clothes from us.</p>
-                <ul class="socmed">
-                    <li><a href="#" title="facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
-                    <li><a href="#" title="instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#" title="twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
-                </ul>
+    <footer>
+        <div class="footwrap">
+            <div class="row1">
+                <div class="copyright">
+                    <h1>FASHION</h1>
+                    <p>Complete your style with awesome clothes from us.</p>
+                    <ul class="socmed">
+                        <li><a href="#" title="facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" title="instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" title="twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column1">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="column1">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
+            <div class="row2">
+                <div class="column2">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="#">Share Location</a></li>
+                        <li><a href="#">Orders Tracking</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="column3">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <div class="row2">
-            <div class="column2">
-                <h3>Quick Link</h3>
-                <ul>
-                    <li><a href="#">Share Location</a></li>
-                    <li><a href="#">Orders Tracking</a></li>
-                    <li><a href="#">Size Guide</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
-            </div>
-
-            <div class="column3">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</footer>
+        <a href="#" class="skip-link-footer" aria-label="Back to top">Back to top</a>
+    </footer>
 
 </body>
 

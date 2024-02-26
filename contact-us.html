@@ -14,6 +14,11 @@
 </head>
 
 <body>
+    <div class="container">
+        <ul class="skip-links">
+            <li><a href="#menu">Skip to main navigation</a></li>
+            <li><a href="#main">Skip to main content</a></li>
+        </ul>
     <header>
         <div class="masthead">
             <!-- Logo -->
@@ -21,15 +26,15 @@
                 <img src="images/logos/logo_fashion.svg" alt="Fashion Logo">
             </div>
 
-            <!-- Adding checkbox prompt for hamburger menu -->
-            <input type="checkbox" id="check">
-            <label for="check" class="icon">
-                <!-- Put i-class here for menu -->
-                <!-- Put i-class here for close button -->
-            </label>
+          <!-- Adding checkbox prompt for hamburger menu -->
+          <input type="checkbox" id="check">
+          <label for="check" class="icon" aria-controls="menu">
+              <i class="fa-solid fa-bars" id="menu-icon"></i>
+              <i class="fa-solid fa-xmark" id="close"></i>
+          </label>
 
             <!-- Navigation -->
-            <nav>
+            <nav id="menu">
                 <ul class="navbar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="catalogue.html">Catalogue</a></li>
@@ -39,8 +44,9 @@
             </nav>
         </div>
     </header>
+    </div>
 
-    <main>
+    <main id="main">
         <div class="hearfromyou">
             <div class="contacttxt">
             <h1>Contact Us</h1>
@@ -106,7 +112,7 @@
             </div>
         </div>
     </div>
-
+    <a href="#" class="skip-link-footer" aria-label="Back to top">Back to top</a>
 </footer>
 
 </body>

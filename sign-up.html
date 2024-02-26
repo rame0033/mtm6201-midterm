@@ -14,123 +14,141 @@
 </head>
 
 <body>
-    <header>
-        <div class="masthead">
-            <!-- Logo -->
-            <div class="logowrap">
-                <img src="images/logos/logo_fashion.svg" alt="Fashion Logo">
+    <div class="container">
+        <ul class="skip-links">
+            <li><a href="#menu">Skip to main navigation</a></li>
+            <li><a href="#main">Skip to main content</a></li>
+        </ul>
+        <header>
+            <div class="masthead">
+                <!-- Logo -->
+                <div class="logowrap">
+                    <img src="images/logos/logo_fashion.svg" alt="Fashion Logo">
+                </div>
+
+                <!-- Adding checkbox prompt for hamburger menu -->
+                <input type="checkbox" id="check">
+                <label for="check" class="icon" aria-controls="menu">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    <i class="fa-solid fa-xmark" id="close"></i>
+                </label>
+
+                <!-- Navigation -->
+                <nav id="menu">
+                    <ul class="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalogue.html">Catalogue</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="sign-up.html">Sign Up</a></li>
+                    </ul>
+                </nav>
             </div>
+        </header>
+    </div>
 
-            <!-- Adding checkbox prompt for hamburger menu -->
-            <input type="checkbox" id="check">
-            <label for="check" class="icon">
-                <!-- Put i-class here for menu -->
-                <!-- Put i-class here for close button -->
-            </label>
-
-            <!-- Navigation -->
-            <nav>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="catalogue.html">Catalogue</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="sign-up.html">Sign Up</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="sign_upform">
+    <main id="main" class="sign_upform">
         <div class="sign-up">
-        <h1>SIGN UP</h1>
-        <form action="thanks.html" method="get">
-            <!-- Full name -->
-            <label for="fullname">Full Name</label>
-            <input type="text" placeholder="Full Name" id="fullname" name="fullname" aria-required="true">
-            
-            <!-- Email -->
-            <label for="youremail">Email</label>
-            <input type="email" placeholder="Email" id="youremail" name="youremail"  aria-required="true">
-            
-            <!-- Confirm Email -->
-            <label for="confirm-email">Confirm Email</label>
-            <input type="text" placeholder="Confirm Email" id="confirm-email" name="confirm-email"  aria-required="true">
-            
-            <!-- Create Password -->
-            <label for="password"><b>Create Password</b></label>
-            <input type="password" placeholder="Create Password" id="create-password" name="create-password"  aria-required="true">
-            
-            <!-- Confirm Password -->
-            <label for="password"><b>Confirm Password</b></label>
-            <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password"  aria-required="true">
+            <h1>SIGN UP</h1>
+            <form action="thanks.html" method="get">
+                <!-- Full name -->
+                <label for="fullname">Full Name</label>
+                <input type="text" placeholder="Full Name" id="fullname" name="fullname" aria-required="true">
 
-            <!-- Send Button -->
-            <button type="submit" aria-pressed="true">Sign Up</button>
+                <!-- Email -->
+                <label for="youremail">Email</label>
+                <input type="email" placeholder="Email" id="youremail" name="youremail" aria-required="true">
 
-            <!-- Terms & Conditions -->
-            <input type="Checkbox" id="terms" name="terms" value="terms" aria-required="true">
-            <label for="terms">I agree to the <a href="terms.html">Terms & Conditions</a></label>
-        <div class="extlink">
-            <h3>Or sign-up with</h3>
-            <ul class="externallinks">
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i>Sign Up with Facebook</a></li>
-                <li><a href="https://www.yahoo.com/" title="Yahoo"><i class="fa-brands fa-yahoo"></i>Sign Up with Yahoo</a></li>
-                <li><a href="https://www.google.com/" title="Google"><i class="fa-brands fa-google"></i>Sign Up with Google</a></li>
-            </ul>
+                <!-- Confirm Email -->
+                <label for="confirm-email">Confirm Email</label>
+                <input type="text" placeholder="Confirm Email" id="confirm-email" name="confirm-email"
+                    aria-required="true">
+
+                <!-- Create Password -->
+                <label for="create-password"><b>Create Password</b></label>
+                <input type="password" placeholder="Create Password" id="create-password" name="create-password"
+                    aria-required="true">
+
+                <!-- Confirm Password -->
+                <label for="confirm-password"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password"
+                    aria-required="true">
+
+                <!-- Send Button -->
+                <button type="submit" aria-pressed="true">Sign Up</button>
+
+                <!-- Terms & Conditions -->
+                <input type="Checkbox" id="terms" name="terms" value="terms" aria-required="true">
+                <label for="terms">I agree to the <a href="terms.html">Terms & Conditions</a></label>
+                <div class="extlink">
+                    <h3>Or sign-up with</h3>
+                    <ul class="externallinks">
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i>Sign Up with
+                                Facebook</a></li>
+                        <li><a href="https://www.yahoo.com/" title="Yahoo"><i class="fa-brands fa-yahoo"></i>Sign Up
+                                with Yahoo</a></li>
+                        <li><a href="https://www.google.com/" title="Google"><i class="fa-brands fa-google"></i>Sign Up
+                                with Google</a></li>
+                    </ul>
+                </div>
+            </form>
         </div>
     </main>
 
- <!-- footer -->
- <footer>
-    <div class="footwrap">
-        <div class="row1">
-            <div class="copyright">
-                <h1>FASHION</h1>
-                <p>Complete your style with awesome clothes from us.</p>
+    <!-- footer -->
+    <footer>
+        <div class="footwrap">
+            <div class="row1">
+                <div class="copyright">
+                    <h1>FASHION</h1>
+                    <p>Complete your style with awesome clothes from us.</p>
                     <ul class="socmed">
-                        <li><a href="#" title="facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a href="#" title="facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" title="instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" title="twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        </li>
                     </ul>
+                </div>
+
+                <div class="column1">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="column1">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
+            <div class="row2">
+                <div class="column2">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="#">Share Location</a></li>
+                        <li><a href="#">Orders Tracking</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="column3">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="row2">
-            <div class="column2">
-                <h3>Quick Link</h3>
-                <ul>
-                    <li><a href="#">Share Location</a></li>
-                    <li><a href="#">Orders Tracking</a></li>
-                    <li><a href="#">Size Guide</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
-            </div>
-
-            <div class="column3">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</footer>
+    </footer>
 
 
-    
+
 </body>
 
 </html>

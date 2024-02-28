@@ -1,0 +1,282 @@
+/* Adding skip links */
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+      
+  /* Styling skip link hidden */
+  .skip-links a{
+    position: absolute;
+    top: -3em;
+    right: 3em;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+  
+  .skip-links a:focus{
+    top: 0;
+  } 
+
+  /***********
+     HEADER  
+  ***********/
+
+  /* Styling the logo nav wrap */
+.masthead {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    align-items: center;
+}
+
+/* Flex grow on logo to nav */
+.logowrap{
+    flex:1;
+}
+
+.logowrap img{
+    width:20%;
+}
+
+/* Styling the icon */
+
+.icon{
+    font-size:2em;
+    cursor: pointer;
+    display: none;
+    right:0;
+}
+
+/* Hiding the checkbox input */
+#check{
+    display: none;
+}
+
+/* Styling nav menu */
+.navbar a{
+    justify-content: space-around;
+    text-align: center;
+    padding:0.5em;
+    font-size:1.25em;
+    color: #000000;
+}
+
+/* LOve HAte */
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav a:focus,
+nav a:active{       
+    color:white;
+    background-color:black;
+    font-weight: bold;
+    border: radius 10px;;
+}
+
+/*********
+ FOOTER
+*********/
+
+footer{
+    background-color: #000000;
+    padding:1rem 1rem 5rem 1rem;
+    height:27rem;
+}
+
+.footwrap{
+    max-width: 1200px;
+    padding:1rem;
+    margin:0 auto;
+}
+
+/* Font-color footer */
+.fashion-slugLine h4,
+.column1 h3,
+.row2 h3{
+    color:#ffffff;
+}
+
+.fashion-slugLine p,
+.column1 a,
+.row2 a{
+    color: #A19E9B;
+}
+
+/* Styling socmed icons */
+.socmed{
+    display: flex;
+    padding:1rem 0;
+    gap:5px;
+}
+
+.socmed li{
+    font-size: 1rem;
+    text-align: center;
+    width: 20px;
+    color:#000000;
+    background-color: #EBD96B;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* font-color for icons */
+.socmed a{
+    color: #000000;
+}
+
+/* Gap between headings and contents */
+.fashion-slugLine h4{
+    padding-bottom: 0.25rem;
+}
+
+.column1 h3,
+.row2 h3{
+    padding-bottom: 0.5rem;
+}
+
+.column1,
+.column2,
+.column3{
+    padding-bottom: 0.5rem;
+}
+
+.column1 li,
+.row2 li{
+    line-height: 1.3rem;
+}
+
+/* Adds style for footer skip link */
+    
+.skip-link-footer {
+    position: absolute;
+    margin-top: 1em;
+    right:40%;
+    border:1px solid #EBD96B;
+    text-decoration: none;
+    color: #EBD96B;
+    padding: .5em 1em;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }   
+  
+  /* Hover state */
+  .skip-link-footer:hover{
+    text-decoration: underline;
+  }
+  
+  /* Active state */
+  .skip-link-footer:focus{
+    text-decoration: underline;
+    background-color: #EBD96B;
+    color:black;
+  }
+  
+/* LOGO-NAV MOBILE */
+
+  /* Styling the nav menu for mobile */
+  @media screen and (max-width:689px){
+    #check {
+        display: none;
+    }
+    
+    .navbar a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px;
+        color: black;
+    }
+
+      /* Styling the hamburger and close icon */
+      .icon {
+        display: block;
+        padding-top: 4px;
+    }
+
+    #check:checked~.icon #menu-icon {
+        display: none;
+    }
+    
+    .icon #close {
+        display: none;
+    }
+    
+    #check:checked~.icon #close {
+        display: block;
+    }
+    
+    /* Styling the navigation bar on click */
+    #menu {
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: #ffffff;
+        transition: .3s ease;
+        overflow: hidden;
+    }
+    
+    #check:checked~#menu {
+        height: 9rem;
+    }
+}
+
+/* MENU DESKTOP */
+@media screen and (min-width:690px) {
+
+    /* HEADER NAV */
+
+    .logowrap img{
+        width:27%;
+    }
+
+    /* Hiding hamburger icon */
+    .icon{
+        display: none;
+    }
+    
+    /* Nav bar for larger screens */
+    .navbar {
+        margin-top: 8px;
+        display: flex;
+    }
+
+    /* Add spacing on navigation links */
+    .navbar a {
+        margin-left: 2.5em;
+    }
+
+    /* FOOTER */
+    footer{
+        height: 10.1rem;
+    }
+    /* Max-width for fashion slug line */
+    .fashion-slugLine {
+        max-width: 300px;
+        flex-grow: 1;
+    }
+
+    .fashion-slugLine p{
+        line-height: 1.025rem;
+    }
+
+    /* Horizontal display for footer */
+    .footwrap{
+        display: flex;
+        gap: 20%;
+    }
+
+    .row1,
+    .row2{
+        display: flex;
+        flex-direction: row;
+        gap:10%;
+    }
+}

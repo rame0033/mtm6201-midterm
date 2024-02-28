@@ -1,0 +1,73 @@
+/* Styling home banner */
+.welcome_banner{
+    max-width: 1200px;
+    margin: 0 auto ;
+    background-color: #F4F6F5;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Styling the text-wrap for banners */
+.text-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:320px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.text-wrap h1{
+    padding-bottom: 1rem;
+}
+
+.text-wrap p{
+    padding-bottom: 2rem;
+}
+
+/* Sizing for banner header */
+.text-wrap h1{
+    font-size: 4.4rem;
+}
+
+/* Hiding the svg design */
+.banner_vector{
+    display: none;
+}
+
+/* Styling the button */
+.ctabtn{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hiding banner image */
+.hero-wrap{
+    display: none;
+}
+
+/* Styling the logos portion */
+.logos{
+    background-color: #EBD96B;
+    margin:2rem 0;
+}
+
+.logo-wrap{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo-wrap img{
+    width: 120px;
+    height:100px;
+    gap:10%;
+}

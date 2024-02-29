@@ -226,6 +226,7 @@ footer{
     #check:checked~#menu {
         height: 9rem;
     }
+
 }
 
 /* MENU FOR LARGER SCREEN */

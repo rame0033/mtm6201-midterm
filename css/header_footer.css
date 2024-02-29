@@ -272,7 +272,7 @@ footer{
     /* Horizontal display for footer */
     .footwrap{
         display: flex;
-        gap: 20%;
+        gap: 16%;
     }
 
     .row1,

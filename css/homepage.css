@@ -416,3 +416,26 @@
     }
 }
 
+/* Media queries for desktop and larger screens */
+@media screen and (min-width:1024px) {
+
+    /* HEADER BANNER */
+    .welcome_banner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0rem 1rem 0rem 1rem;
+        margin-bottom:2rem;
+    }
+
+    /* Visible setting for banner img */
+    .hero-wrap{
+        display: flex;
+        width:50%;
+    }
+
+    /* Setting desktop width for banner img */
+    .welcome_banner img{
+        width:100%;
+    }
+}

@@ -1,6 +1,52 @@
-.content_heading {
+/* Adds style for content heading */
+.header_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
   text-align: center;
   background-image: url(../images/vector8.svg);
   background-repeat: no-repeat;
-  background-position:bottom 5% right 50rem;
+  background-size: 185px 45px;
+  background-position: bottom 5% right 50px;
 }
+
+/* CONTACT PAGE */
+.hearfromyou{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5rem;
+  gap:2rem;
+}
+
+/* Adds space between contact and space */
+.contacttxt h3{
+  padding-top: 2rem;
+}
+
+/* Adding font-weight to subheading */
+.contacttxt h3,
+.map h3,
+.hearfromyou span{
+  font-weight: 600;
+}
+
+.map h3{
+  font-size: 2rem;
+}
+
+.map{
+  width: 100%;
+}
+
+.map iframe{
+  width: 100%;
+  height: 50vh;
+}
+
+/* STYLE FOR SIGN-UP FORM */
+
+
+

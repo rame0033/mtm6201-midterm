@@ -1,73 +1,417 @@
 /* Styling home banner */
-.welcome_banner{
+.welcome_banner {
     max-width: 1200px;
-    margin: 0 auto ;
+    margin: 0 auto;
     background-color: #F4F6F5;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
 }
 
 /* Styling the text-wrap for banners */
-.text-wrap{
+.text-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:320px;
-    padding: 2rem;
+    width: 310px;
+    padding: 1rem;
     margin: 0 auto;
 }
 
-.text-wrap h1{
+.text-wrap h1 {
     padding-bottom: 1rem;
 }
 
-.text-wrap p{
+.text-wrap p {
     padding-bottom: 2rem;
 }
 
 /* Sizing for banner header */
-.text-wrap h1{
-    font-size: 4.4rem;
+.text-wrap h1 {
+    font-size: 4rem;
 }
 
 /* Hiding the svg design */
-.banner_vector{
+.banner_vector {
     display: none;
 }
 
 /* Styling the button */
-.ctabtn{
+.ctabtn {
     background-color: #000000;
     color: #ffffff;
     padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
 /* Hiding banner image */
-.hero-wrap{
+.hero-wrap {
     display: none;
 }
 
-/* Styling the logos portion */
-.logos{
+/* Styling the partner logos portion */
+.logos {
     background-color: #EBD96B;
-    margin:2rem 0;
+    margin-bottom: 2rem;
 }
 
-.logo-wrap{
-    margin: 0 auto;
-    max-width: 1200px;
+.logo-wrap {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.logo-wrap img {
+    width: 100px;
+}
+
+/*NEW ARRIVALS*/
+.new-arrivals {
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.card {
     padding: 1rem;
 }
 
-.logo-wrap img{
-    width: 120px;
-    height:100px;
-    gap:10%;
+/* Setting the width for card img */
+.new-arrivals picture img,
+.favecard picture img {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+
+/* Styling the card text*/
+.txtcard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    flex-grow: 1;
+}
+
+.title h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Styling the arrow button icon */
+.arrow i {
+    font-size: 2rem;
+}
+
+/* PAYDAY BANNER */
+
+.payday {
+    display: flex;
+    background: linear-gradient(345deg, #e0c340 20%, #ffe458 90%);
+}
+
+.payday .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Hiding the image for smaller screens */
+.paydaypic {
+    display: none;
+}
+
+/* Styling the text wrap payday banner */
+.paytxt .txtwrap {
+    padding: 2rem 2rem 3rem 2rem;
+}
+
+.payday .txtwrap p {
+    padding: 0.75rem 0;
+}
+
+.date {
+    margin-bottom: 1.5rem;
+}
+
+.date span {
+    font-weight: 600;
+}
+
+.paytxt a {
+    margin-top: 2rem;
+}
+
+.youngs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.favecard {
+    display: flex;
+    flex-direction: column;
+}
+
+/* APP CTA */
+.app_cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 0 1rem;
+}
+
+.app_cta .txtwrap {
+    width: 90%;
+}
+
+/* Styling the app store badges */
+.download {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.download img {
+    width: 100%;
+}
+
+.apphero img {
+    width: 100%;
+    margin-top: -3rem;
+}
+
+/* App cta paragraph */
+.app_cta p {
+    padding: 1rem 0;
+    line-height: 1.25rem;
+}
+
+/* NEWSLETTER PORTION */
+.newsletter {
+    background-color: #ffe458;
+}
+
+.news_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.news_wrap h2 {
+    padding: 1rem 0;
+    line-height: 2.3rem;
+}
+
+.news_wrap p {
+    line-height: 1.25rem;
+    font-size: 1rem;
+}
+
+/* Styling the sign-up form */
+.newssign-up {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.newssign-up input {
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5rem;
+    border: none;
+    width: 60%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.newssign-up button {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Media query for tablet */
+@media screen and (min-width:768px) {
+
+    /* Styling the header banner */
+    .welcome_banner .text-wrap{
+        width:320px;
+        background-image: url('../images/star_banner.svg');
+    }
+
+    /* New Arrivals catalogue */
+    .arrivecards .card {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    /* Sizing for pictures (new arrivals) */
+    .new-arrivals picture img {
+        padding: 0;
+        border-radius: 0px;
+    }
+
+    .arrivecards .cataloguepic {
+        width: 50%;
+        padding: 0;
+    }
+
+    .arrivecards .piccard {
+        display: flex;
+    }
+
+    /* Styling the text-wrap for new arrivals */
+    .arrivecards .txtcard {
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .arrivecards .title {
+        flex-grow: 0;
+    }
+
+    .arrivecards h3 {
+        font-size: 2rem;
+    }
+
+    .arrivecards .title {
+        line-height: 3rem;
+    }
+
+    .arrivecards .title p {
+        font-size: 2rem;
+    }
+
+    .arrivecards .arrow i {
+        font-size: 3rem;
+    }
+
+    .arrivecards .card1 .txtcard {
+        /*
+        * Created with https://www.css-gradient.com
+        * Gradient link: https://www.css-gradient.com/?c1=a4a4a4&c2=bbb8bb&gt=l&gd=dtl
+        */
+        background: #A4A4A4;
+        background: linear-gradient(162deg, #A4A4A4, #BBB8BB);
+        padding: 0;
+    }
+
+    .arrivecards .card2 .txtcard {
+        /** Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=c1a7d9&c2=b596d5&gt=l&gd=dtt 
+    */
+        background: #C1A7D9;
+        background: linear-gradient(180deg, #C1A7D9, #B596D5);
+    }
+
+    .arrivecards .card3 .txtcard {
+        /*
+        * Created with https://www.css-gradient.com
+        * Gradient link: https://www.css-gradient.com/?c1=a9f4f3&c2=87ebea&gt=l&gd=dtt
+        */
+        background: #A9F4F3;
+        background: linear-gradient(180deg, #A9F4F3, #87EBEA);
+    }
+
+    /* Styling card 1 and 3 to appear text left of the screen */
+    .arrivecards .card1,
+    .arrivecards .card3 {
+        flex-direction: row-reverse;
+    }
+
+    .arrivecards .title,
+    .arrivecards .arrow {
+        padding-left: 4rem;
+    }
+
+    .arrivecards .card1 .txtcard,
+    .arrivecards .card3 .txtcard {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .arrivecards .card1 img,
+    .arrivecards .card3 img {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    /* Styling card 2 - new arrivals */
+    .arrivecards .card2 img
+     {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .arrivecards .card2 .txtcard {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    /* Styling the payday banner */
+    .payday .txtwrap{
+        text-align: center;
+        width: 50%;
+    margin: 0 auto;
+    }
+
+    /* Styling text on 'favorite' section */
+    .favecard h3 {
+        font-size: 1.7rem;
+    }
+
+    .favecard .title {
+        line-height: 2rem;
+    }
+
+    .favecard .title p {
+        font-size: 1.5rem;
+    }
+
+    .favecard .arrow i {
+        font-size: 2.5rem;
+    }
+
+    /* Font-size for APP CTA */
+    .app_cta h2{
+        font-size: 3rem;
+    }
+
+    /* Width for APP CTA Text and app store badge */
+    .app_cta .txtwrap {
+        width: 60%;
+    }
+
+    /* Download badge */
+    .app_cta .download img{
+        height:75px;
+    }
+    .app_cta .download{
+        width:50%;
+    }
+
+    .app_cta .txtwrap {
+        text-align: center;
+    }
+
+    .apphero{
+        margin-top: -5rem;
+    }
 }

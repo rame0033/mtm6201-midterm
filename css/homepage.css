@@ -461,12 +461,22 @@
     }
 
     .paydaypic picture img {
-        width: 532px;
-        height: 611px;
+        width: 442px;
+        height: 488px;
         object-fit: cover;
     }
 
-    
+    .paytxt{
+        display: flex;
+        align-items: center;
+        height:100%;
+    }
+    /* Setting width for payday textwrap */
+    .paytxt .txtwrap{
+        width: 60%;
+        height:50%;
+        padding-left: 5rem;
+    }
 
 }
 

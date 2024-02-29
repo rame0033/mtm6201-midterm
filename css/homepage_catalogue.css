@@ -463,7 +463,8 @@
     /* Setting vector image to visible */
     .banner_vector{
         display: flex;
-    object-fit: contain;
+        width: 150px;
+        object-fit: contain;
     }
 
     .welcome_banner .ctabtn{

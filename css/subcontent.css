@@ -78,3 +78,21 @@
   width:fit-content;
 }
 
+.terms label a{
+  color: black;
+  text-decoration: underline;
+}
+
+.terms label a:hover{
+  font-weight: 600;
+}
+
+.sign-up button{
+  color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}

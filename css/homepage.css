@@ -168,7 +168,7 @@
     padding: 2rem 1rem 0 1rem;
 }
 
-.apptxtwrap{
+.apptxtwrap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -423,8 +423,7 @@
 }
 
 /* Header banner query */
-@media screen and (min-width:1024px) and
-(max-width: 1209px){
+@media screen and (min-width:1024px) and (max-width: 1209px) {
 
     /* HEADER BANNER */
     .welcome_banner {
@@ -455,6 +454,22 @@
         padding: 1rem 2rem;
     }
 
+    /* Button wrap for header banner */
+    .welcome_banner .btn-wrap {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    /* Setting vector image to visible */
+    .banner_vector{
+        display: flex;
+    object-fit: contain;
+    }
+
+    .welcome_banner .ctabtn{
+        width:5rem;
+    }
+
     .arrivecards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -472,79 +487,81 @@
         object-fit: cover;
     }
 
-    .paytxt{
+    .paytxt {
         display: flex;
         align-items: center;
-        height:100%;
+        height: 100%;
     }
+
     /* Setting width for payday textwrap */
-    .paytxt .txtwrap{
+    .paytxt .txtwrap {
         width: 60%;
-        height:50%;
+        height: 50%;
         padding-left: 5rem;
     }
 
-      /* Young's favorite - section for this media query */
-      .favecard{
+    /* Young's favorite - section for this media query */
+    .favecard {
         flex-direction: row;
-        padding:1rem;
+        padding: 1rem;
     }
 
     /* APP CTA SECTION */
-    .app_cta{
+    .app_cta {
         flex-direction: row;
     }
 
-    .apptxtwrap{
-        width:50%;
+    .apptxtwrap {
+        width: 50%;
     }
 
     /* Width settings for the text-wrap */
-    .apptxtwrap .txtwrap{
+    .apptxtwrap .txtwrap {
         width: 22rem;
     }
 
-    .app_cta .download{
-        width:23rem;
+    .app_cta .download {
+        width: 23rem;
     }
 
     /* Styling the hero image for app */
-    .apphero{
-           width:45%;
-           padding:5rem;
+    .apphero {
+        width: 45%;
+        padding: 5rem;
     }
 
-    .apphero picture img{
-        width:100%;
+    .apphero picture img {
+        width: 100%;
     }
 
     /* Newsletter section */
-    .news_wrap{
+    .news_wrap {
         width: 50rem;
     }
 
     /* FOOTER */
     .footwrap .row1,
-    .footwrap .row2{
+    .footwrap .row2 {
         width: 50%;
-    justify-content: space-between;
+        justify-content: space-between;
     }
 }
 
 /* Banner header for larger screens */
 @media screen and (min-width:1210px) {
-     /* HEADER BANNER */
-     .welcome_banner{
+
+    /* HEADER BANNER */
+    .welcome_banner {
         display: flex;
         align-items: center;
         padding: 0rem 1rem 0rem 1rem;
-        margin-bottom:2rem;
+        margin-bottom: 2rem;
     }
 
     /* Visible setting for banner img */
-    .hero-wrap{
+    .hero-wrap {
         display: flex;
-        width:50%;
+        width: 50%;
     }
 
     /* Setting desktop width for banner img */

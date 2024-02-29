@@ -503,7 +503,6 @@
     /* Young's favorite - section for this media query */
     .favecard {
         flex-direction: row;
-        padding: 1rem;
     }
 
     /* APP CTA SECTION */

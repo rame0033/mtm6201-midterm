@@ -517,6 +517,18 @@
     .apphero picture img{
         width:100%;
     }
+
+    /* Newsletter section */
+    .news_wrap{
+        width: 50rem;
+    }
+
+    /* FOOTER */
+    .footwrap .row1,
+    .footwrap .row2{
+        width: 50%;
+    justify-content: space-between;
+    }
 }
 
 /* Banner header for larger screens */

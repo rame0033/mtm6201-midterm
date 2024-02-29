@@ -245,11 +245,11 @@
 }
 
 /* Media query for tablet */
-@media screen and (min-width:768px) and (max-width:1023px){
+@media screen and (min-width:768px) and (max-width:1023px) {
 
     /* Styling the header banner */
-    .welcome_banner .text-wrap{
-        width:320px;
+    .welcome_banner .text-wrap {
+        width: 320px;
         background-image: url('../images/star_banner.svg');
     }
 
@@ -354,8 +354,7 @@
     }
 
     /* Styling card 2 - new arrivals */
-    .arrivecards .card2 img
-     {
+    .arrivecards .card2 img {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
     }
@@ -366,10 +365,10 @@
     }
 
     /* Styling the payday banner */
-    .payday .txtwrap{
+    .payday .txtwrap {
         text-align: center;
         width: 50%;
-    margin: 0 auto;
+        margin: 0 auto;
     }
 
     /* Styling text on 'favorite' section */
@@ -390,7 +389,7 @@
     }
 
     /* Font-size for APP CTA */
-    .app_cta h2{
+    .app_cta h2 {
         font-size: 3rem;
     }
 
@@ -400,29 +399,82 @@
     }
 
     /* Download badge */
-    .app_cta .download img{
-        height:75px;
+    .app_cta .download img {
+        height: 75px;
     }
-    .app_cta .download{
-        width:50%;
+
+    .app_cta .download {
+        width: 50%;
     }
 
     .app_cta .txtwrap {
         text-align: center;
     }
 
-    .apphero{
+    .apphero {
         margin-top: -5rem;
+    }
+}
+
+/* Header banner query */
+@media screen and (min-width:1030px) and
+(max-width: 1209px){
+
+    /* HEADER BANNER */
+    .welcome_banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0rem 1rem 0rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Visible setting for banner img */
+    .hero-wrap {
+        display: flex;
+        width: 50%;
+    }
+
+    /* Setting desktop width for banner img */
+    .welcome_banner picture img {
+        width: 100%;
     }
 }
 
 /* Media queries for desktop and larger screens */
 @media screen and (min-width:1024px) {
 
-    /* HEADER BANNER */
-    .welcome_banner{
+    /* Adjusting text banner */
+    .welcome_banner .ctabtn {
+        padding: 1rem 2rem;
+    }
+
+    .arrivecards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Displays payday banner hero img */
+    .paydaypic {
         display: flex;
-        justify-content: space-around;
+        width: 60%;
+    }
+
+    .paydaypic picture img {
+        width: 532px;
+        height: 611px;
+        object-fit: cover;
+    }
+
+    
+
+}
+
+/* Banner header for larger screens */
+@media screen and (min-width:1210px) {
+     /* HEADER BANNER */
+     .welcome_banner{
+        display: flex;
         align-items: center;
         padding: 0rem 1rem 0rem 1rem;
         margin-bottom:2rem;
@@ -435,13 +487,9 @@
     }
 
     /* Setting desktop width for banner img */
-    .welcome_banner img{
-        width:100%;
+    .welcome_banner picture img {
+        width: 757px;
+        height: 536px;
+        object-fit: cover;
     }
-
-    .arrivecards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
 }

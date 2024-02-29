@@ -168,6 +168,12 @@
     padding: 2rem 1rem 0 1rem;
 }
 
+.apptxtwrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .app_cta .txtwrap {
     width: 90%;
 }
@@ -417,7 +423,7 @@
 }
 
 /* Header banner query */
-@media screen and (min-width:1030px) and
+@media screen and (min-width:1024px) and
 (max-width: 1209px){
 
     /* HEADER BANNER */
@@ -478,6 +484,39 @@
         padding-left: 5rem;
     }
 
+      /* Young's favorite - section for this media query */
+      .favecard{
+        flex-direction: row;
+        padding:1rem;
+    }
+
+    /* APP CTA SECTION */
+    .app_cta{
+        flex-direction: row;
+    }
+
+    .apptxtwrap{
+        width:50%;
+    }
+
+    /* Width settings for the text-wrap */
+    .apptxtwrap .txtwrap{
+        width: 22rem;
+    }
+
+    .app_cta .download{
+        width:23rem;
+    }
+
+    /* Styling the hero image for app */
+    .apphero{
+           width:45%;
+           padding:5rem;
+    }
+
+    .apphero picture img{
+        width:100%;
+    }
 }
 
 /* Banner header for larger screens */

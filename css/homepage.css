@@ -292,11 +292,11 @@
     }
 
     .arrivecards .title {
-        line-height: 3rem;
+        line-height: 2.5rem;
     }
 
     .arrivecards .title p {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .arrivecards .arrow i {
@@ -415,3 +415,4 @@
         margin-top: -5rem;
     }
 }
+

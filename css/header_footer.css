@@ -154,8 +154,8 @@ footer{
     
 .skip-link-footer {
     position: absolute;
-    margin-top: 1em;
-    right:40%;
+    margin-top: 0.8em;
+    left:10%;
     border:1px solid #EBD96B;
     text-decoration: none;
     color: #EBD96B;

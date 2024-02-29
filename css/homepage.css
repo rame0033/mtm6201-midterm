@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 310px;
+    width: 320px;
     padding: 1rem;
     margin: 0 auto;
 }
@@ -245,7 +245,7 @@
 }
 
 /* Media query for tablet */
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1023px){
 
     /* Styling the header banner */
     .welcome_banner .text-wrap{
@@ -438,4 +438,10 @@
     .welcome_banner img{
         width:100%;
     }
+
+    .arrivecards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
 }

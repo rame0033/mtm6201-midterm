@@ -102,6 +102,11 @@
 .terms label a{
   color: black;
   text-decoration: underline;
+  width: 170px; /* To limit the width of the link */
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   transition: all 0.2s ease-out;
 }
 

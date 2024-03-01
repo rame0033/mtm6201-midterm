@@ -33,6 +33,12 @@
   font-weight: 600;
 }
 
+/* Adds underline to email text */
+.contacttxt p a{
+  color:black;
+  text-decoration: underline;
+}
+
 .map h3{
   font-size: 2rem;
 }
@@ -81,18 +87,29 @@
 .terms label a{
   color: black;
   text-decoration: underline;
-}
-
-.terms label a:hover{
-  font-weight: 600;
+  transition: all 0.2s ease-out;
 }
 
 .sign-up button{
   color: white;
-    font-family: 'Poppins', sans-serif;
-    background-color: black;
-    font-size: 1rem;
-    padding: 0.8rem;
-    border: 1px solid black;
-    border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
 }
+
+/* HOVER STATES */
+.terms label a:hover{
+  font-weight: 600;
+}
+
+.sign-up button:hover{
+  background-color: #EBD96B;
+  border: none;
+  color: black;
+}
+

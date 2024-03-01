@@ -173,4 +173,10 @@
   margin:1rem 0;
 }
 
-/* For larger screens */
+/* Adjusts svg on heading wrap for larger screen */
+@media screen and (min-width: 768px){
+  .header_wrap {
+  background-position: bottom 5% right 13rem;
+}
+  
+}

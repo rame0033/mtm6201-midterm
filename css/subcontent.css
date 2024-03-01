@@ -1,73 +1,86 @@
 /* Adds style for content heading */
-.header_wrap {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Style for "Catalogue" heading only */
+.header_wrap .heading1 {
+  max-width: 500px;
+  margin: 0 auto;
   text-align: center;
   background-image: url(../images/vector8.svg);
   background-repeat: no-repeat;
   background-size: 185px 45px;
-  background-position: bottom 5% right 50px;
+  background-position: bottom 5% right 0;
+}
+
+/* Style for 'Contact' and 'Sign Up' heading */
+.header_wrap .heading2,
+.header_wrap .heading3 {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(../images/vector8.svg);
+  background-repeat: no-repeat;
+  background-size: 185px 45px;
+  background-position: bottom 5% right 70px;
 }
 
 /* CONTACT PAGE */
-.hearfromyou{
+.hearfromyou {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 1.5rem;
-  gap:2rem;
+  gap: 2rem;
 }
 
 /* Adds space between contact and space */
-.contacttxt h3{
+.contacttxt h3 {
   padding-top: 2rem;
 }
 
 /* Adding font-weight to subheading */
 .contacttxt h3,
 .map h3,
-.hearfromyou span{
+.hearfromyou span {
   font-weight: 600;
 }
 
 /* Adds underline to email text */
-.contacttxt p a{
-  color:black;
+.contacttxt p a {
+  color: black;
   text-decoration: underline;
 }
 
-.map h3{
+.map h3 {
   font-size: 2rem;
 }
 
-.map{
+.map {
   width: 100%;
 }
 
-.map iframe{
+.map iframe {
   width: 100%;
   height: 50vh;
 }
 
 /* STYLE FOR SIGN-UP FORM */
-.sign-up{
+.sign-up {
   min-height: 60vh;
   display: flex;
   flex-direction: column;
-  gap:5rem;
+  gap: 5rem;
   place-items: center;
-  padding:2rem 0;
+  padding: 2rem 0;
 }
 
 /* Minimizing gap between label and input */
-.sign-up label{
+.sign-up label {
   margin-bottom: -0.8rem;
 }
 
-.sign-up form{
+.sign-up form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -77,7 +90,7 @@
 }
 
 /* Adding line divider below form */
-.sign-up form:after{
+.sign-up form:after {
   content: '';
   display: block;
   width: 100%;
@@ -88,21 +101,22 @@
 
 .sign-up input {
   font-family: 'Poppins', sans-serif;
-    padding: 0.5rem;
-    border: 1px solid black;
-    width: 95%;
-    border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid black;
+  width: 95%;
+  border-radius: 10px;
 }
 
 /* To exclude checkbox from having 95% input width */
-#terms{
-  width:fit-content;
+#terms {
+  width: fit-content;
 }
 
-.terms label a{
+.terms label a {
   color: black;
   text-decoration: underline;
-  width: 170px; /* To limit the width of the link */
+  width: 170px;
+  /* To limit the width of the link */
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -110,7 +124,7 @@
   transition: all 0.2s ease-out;
 }
 
-.sign-up button{
+.sign-up button {
   color: white;
   font: 1rem 'Poppins', sans-serif;
   background: black;
@@ -122,11 +136,11 @@
 }
 
 /* HOVER STATES */
-.terms label a:hover{
+.terms label a:hover {
   font-weight: 600;
 }
 
-.sign-up button:hover{
+.sign-up button:hover {
   background-color: #EBD96B;
   border: none;
   color: black;
@@ -138,45 +152,51 @@
   flex-direction: column;
   align-items: center;
   line-height: 2rem;
-  margin-top:-4rem;
+  margin-top: -4rem;
 }
 
-.extlink h3{
+.extlink h3 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 /* Styling the link text */
-.extlink i{
-  padding-right:0.5rem;
+.extlink i {
+  padding-right: 0.5rem;
 }
 
-.extlink a{
+.extlink a {
   color: black;
-  font-size:1.250rem;
+  font-size: 1.250rem;
   font-weight: 600;
 }
 
 /* Styling as button */
-.extlink li{
+.extlink li {
   display: flex;
   border-radius: 10px;
   background-color: #ebd96b;
-  width:16rem;
+  width: 16rem;
   padding: 1rem;
   align-items: center;
   justify-content: center;
 }
 
 /* Setting gap for external links */
-.extlink ul li{
-  margin:1rem 0;
+.extlink ul li {
+  margin: 1rem 0;
+}
+/* Style for larger screens */
+@media screen and (min-width:1024px) {
+  /* Positioning SVG for "Catalogue" heading only */
+/* .header_wrap .heading1 {
+  background-position: bottom 5% right 250px;
+} */
+
+/* Positioning SVG for 'Contact' and 'Sign Up' heading */
+.header_wrap .heading2,
+.header_wrap .heading3 { 
+  background-position: bottom 5% right 350px;
+}
 }
 
-/* Adjusts svg on heading wrap for larger screen */
-@media screen and (min-width: 768px){
-  .header_wrap {
-  background-position: bottom 5% right 13rem;
-}
-  
-}

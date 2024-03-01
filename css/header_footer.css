@@ -58,6 +58,7 @@
 
 /* Styling nav menu */
 .navbar a{
+    position: relative;
     justify-content: space-around;
     text-align: center;
     padding:0.5em;
@@ -65,13 +66,25 @@
     color: #000000;
 }
 
-/* LOve HAte */
-nav a:hover{
-    text-decoration: underline;
+/* To animate underline on hover */
+.navbar a::after{
+    content: '';
+    position:absolute;
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background: #000000;
+    transition: width 0.2s ease;
 }
 
-nav a:focus,
-nav a:active{       
+/* LOve HAte */
+.navbar a:hover::after{
+    width:100%;
+}
+
+.navbar a:focus,
+.navbar a:active{       
     color:white;
     background-color:black;
     font-weight: bold;

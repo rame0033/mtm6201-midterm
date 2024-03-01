@@ -165,38 +165,78 @@
   padding-right: 0.5rem;
 }
 
-.extlink a {
-  color: black;
-  font-size: 1.250rem;
-  font-weight: 600;
-}
-
 /* Styling as button */
-.extlink li {
+.extlink a {
   display: flex;
+  color: black;
+  font-weight:600;
+  font-size: 1.3rem;
   border-radius: 10px;
-  background-color: #ebd96b;
+  background: #ebd96b;
   width: 16rem;
   padding: 1rem;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease-out;
 }
 
 /* Setting gap for external links */
 .extlink ul li {
   margin: 1rem 0;
 }
+
+/* HOVER STATE FOR EXT LINK */
+.extlink a:hover {
+  background-color: #000000;
+  color: #EBD96B;
+}
+
+
 /* Style for larger screens */
 @media screen and (min-width:1024px) {
-  /* Positioning SVG for "Catalogue" heading only */
-/* .header_wrap .heading1 {
-  background-position: bottom 5% right 250px;
-} */
 
-/* Positioning SVG for 'Contact' and 'Sign Up' heading */
-.header_wrap .heading2,
-.header_wrap .heading3 { 
-  background-position: bottom 5% right 350px;
+  /* Positioning SVG for 'Contact' and 'Sign Up' heading */
+  .header_wrap .heading2,
+  .header_wrap .heading3 {
+    background-position: bottom 5% right 10px;
+  }
+
+  /* CONTACT US PAGE */
+  .hearfromyou {
+    flex-direction: row;
+    justify-content: center;
+    padding:3rem;
+  }
+
+  /* IFRAME MAP for Larger screens */
+  .map {
+    border-left: 1px solid #000000;
+    padding-left: 1rem;
+    width:40%;
+  }
+
+  .map h3{
+    padding-bottom: 1rem;
+  }
+
+  /* SIGN UP PAGE */
+  .sign-up {
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  /* Removes margin from form to lessen gap */
+  .sign-up form {
+    margin: 0;
+    border-right: 1px solid #000000;
+    padding-right: 6rem;
+  }
+
+  /* Removes border bottom from form */
+  .sign-up form:after {
+    display: none;
+  }
 }
-}
+
 

@@ -107,11 +107,10 @@
 
 .sign-up button{
   color: white;
-  font-family: 'Poppins', sans-serif;
-  background-color: black;
-  font-size: 1rem;
+  font: 1rem 'Poppins', sans-serif;
+  background: black;
   padding: 0.8rem;
-  border: 1px solid black;
+  border: 1px solid;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease-out;

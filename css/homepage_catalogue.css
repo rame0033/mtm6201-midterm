@@ -30,18 +30,19 @@
     font-size: 4rem;
 }
 
-.first_span{
+.first_span {
     background-image: url('../images/white_rectangle_3.svg');
     display: flex;
     width: 266px;
     background-position: bottom -7px right 0;
 }
 
-.second_span{
+.second_span {
     background-image: url('../images/yellow_rectangle_6.svg');
     display: flex;
     height: 64px;
 }
+
 /* Hiding the svg design */
 .banner_vector {
     display: none;
@@ -88,18 +89,18 @@
     margin: 0 auto;
 }
 
-.subheading{
-    max-width:500px;
+.subheading {
+    max-width: 500px;
     background-image: url('../images/vector8.svg');
     background-repeat: no-repeat;
-    background-size:121px;
+    background-size: 121px;
 }
 
-.new-arrivals .subheading{
+.new-arrivals .subheading {
     background-position: bottom 0 right 216px;
 }
 
-.youngs .subheading{
+.youngs .subheading {
     background-position: bottom 0 right 130px;
 
 }
@@ -300,8 +301,8 @@
     background-color: #000000;
     color: #EBD96B;
     text-decoration: underline;
-  }
-  
+}
+
 
 /* Media query for tablet */
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -514,14 +515,14 @@
     }
 
     /* Setting vector image to visible */
-    .banner_vector{
+    .banner_vector {
         display: flex;
         width: 150px;
         object-fit: contain;
     }
 
-    .welcome_banner .ctabtn{
-        width:5rem;
+    .welcome_banner .ctabtn {
+        width: 5rem;
     }
 
     .arrivecards {

@@ -54,7 +54,7 @@
 
 /* STYLE FOR SIGN-UP FORM */
 .sign-up{
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   gap:5rem;
@@ -172,3 +172,5 @@
 .extlink ul li{
   margin:1rem 0;
 }
+
+/* For larger screens */

@@ -85,11 +85,11 @@
 }
 
 .navbar a:focus,
-.navbar a:active{       
-    color:white;
-    background-color:black;
+.navbar a:active {       
+    color: white;
+    background: black;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 /*********

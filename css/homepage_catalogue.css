@@ -602,6 +602,53 @@
         width: 50%;
         justify-content: space-between;
     }
+
+    /* Adds animation for larger screens */
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .welcome_banner,
+    .hearfromyou,
+    .sign-up {
+        animation: fadeInAnimation 0.3s ease 0s 1 forwards;
+    }
+
+    .favecard .card1 {
+        animation: fadeInAnimation 0.3s ease 0.1s 1 forwards;
+    }
+
+    .favecard .card2 {
+        animation: fadeInAnimation 0.3s ease 0.2s 1 forwards;
+    }
+
+    .arrivecards .card1 {
+        animation: fadeInAnimation 0.3s ease 0.3s 1 forwards;
+    }
+
+    .arrivecards .card2 {
+        animation: fadeInAnimation 0.3s ease 0.4s 1 forwards;
+    }
+
+    .arrivecards .card3 {
+        animation: fadeInAnimation 0.3s ease 0.5s 1 forwards;
+    }
+
+    .payday {
+        animation: fadeInAnimation 0.3s ease 0.6s 1 forwards;
+    }
+
+    .newsletter{
+        animation: fadeInAnimation 0.3s ease 0.7s 1 forwards;
+    }
 }
 
 /* Banner header for larger screens */

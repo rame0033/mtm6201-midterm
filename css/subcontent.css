@@ -146,6 +146,12 @@
   color: black;
 }
 
+/* Styling button and links when pressed */
+.sign-up button:active,
+.extlink a:active {
+  transform: scale(0.8);
+}
+
 /* Styling the external link - sign-up */
 .extlink {
   display: flex;

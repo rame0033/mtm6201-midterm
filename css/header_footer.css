@@ -64,6 +64,7 @@
     padding:0.5em;
     font-size:1.25em;
     color: #000000;
+    transition: all 0.2s ease;
 }
 
 /* To animate underline on hover */
@@ -88,7 +89,7 @@
     color:white;
     background-color:black;
     font-weight: bold;
-    border: radius 10px;;
+    border: radius 10px;
 }
 
 /*********

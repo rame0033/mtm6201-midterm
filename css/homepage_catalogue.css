@@ -107,11 +107,12 @@
 
 /* Styling card text */
 .arrivecards a,
-.card a {
+.favecard a {
     color: black;
 }
 
-.card {
+.arrivecards a,
+.favecard a {
     padding: 1rem;
     transition: transform 0.3s ease;
 }
@@ -125,7 +126,8 @@
 }
 
 /* Hover state on image cards */
-.card:hover {
+.arrivecards a:hover,
+.favecard a:hover {
     transform: scale(1.1);
     opacity: 0.5;
 }

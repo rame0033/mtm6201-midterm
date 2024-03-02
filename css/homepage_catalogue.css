@@ -291,7 +291,7 @@
     background-color: black;
     font-size: 1rem;
     padding: 0.8rem;
-    border: 1px solid black;
+    border: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: all 0.2s ease-out;
@@ -301,8 +301,7 @@
 .ctabtn:hover,
 .newssign-up button:hover {
     cursor: pointer;
-    background-color: #ebd96b;
-    color: #000000;
+    color: #ebd96b;
     border: 0px;
     font-weight: bold;
 }

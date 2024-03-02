@@ -300,10 +300,16 @@
 .ctabtn:hover,
 .newssign-up button:hover {
     cursor: pointer;
-    background-color: #fefd89;
+    background-color: #ebd96b;
     color: #000000;
     border: 0px;
     font-weight: bold;
+}
+
+/* BUTTON ACTIVE STATE */
+.ctabtn:active,
+.newssign-up button:active {
+    text-decoration: underline;
 }
 
 

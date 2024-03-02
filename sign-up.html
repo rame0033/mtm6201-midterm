@@ -55,30 +55,30 @@
             <form action="thanks.html" method="get">
                 <!-- Full name -->
                 <label for="fullname">Full Name</label>
-                <input type="text" placeholder="John Doe" id="fullname" name="fullname" aria-required="true">
+                <input type="text" placeholder="John Doe" id="fullname" name="fullname" aria-required="true" required>
 
                 <!-- Email -->
                 <label for="youremail">Email</label>
-                <input type="email" placeholder="your@email.com" id="youremail" name="youremail" aria-required="true">
+                <input type="email" placeholder="your@email.com" id="youremail" name="youremail" aria-required="true" required>
 
                 <!-- Confirm Email -->
                 <label for="confirm-email">Confirm Email</label>
                 <input type="text" placeholder="your@email.com" id="confirm-email" name="confirm-email"
-                    aria-required="true">
+                    aria-required="true" required>
 
                 <!-- Create Password -->
                 <label for="create-password"><b>Create Password</b></label>
-                <input type="password" placeholder="Password1234" id="create-password" name="create-password"
-                    aria-required="true">
+                <input type="password" placeholder="Password1234" id="create-password" name="create-password" minlength="5" maxlength="15"
+                    aria-required="true" required>
 
                 <!-- Confirm Password -->
                 <label for="confirm-password"><b>Confirm Password</b></label>
                 <input type="password" placeholder="Password1234" id="confirm-password" name="confirm-password"
-                    aria-required="true">
+                    aria-required="true" required>
 
                 <div class="terms">
                     <!-- Terms & Conditions -->
-                    <input type="Checkbox" id="terms" name="terms" value="terms" aria-required="true">
+                    <input type="Checkbox" id="terms" name="terms" value="terms" aria-required="true" required>
                     <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
                 </div>
 

@@ -197,6 +197,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem 1rem 1rem;
+    margin-bottom:-2rem;
 }
 
 .favecard {

@@ -133,7 +133,6 @@
 /* Hover state on image cards */
 .arrivecards a:hover,
 .favecard a:hover {
-    transform: scale(1.1);
     opacity: 0.5;
 }
 
@@ -541,6 +540,12 @@
         padding: 0.8rem 0;
         margin-bottom: 1rem;
     }
+
+        /* Hover state on image cards for larger screens*/
+.arrivecards a:hover,
+.favecard a:hover {
+    transform: scale(1.1);
+}
 
     /* Displays payday banner hero img */
     .paydaypic {

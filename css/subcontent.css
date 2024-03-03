@@ -42,7 +42,7 @@
 /* Adding font-weight to subheading */
 .contacttxt h3,
 .map h3,
-.hearfromyou span {
+.hearfromyou .category {
   font-weight: 600;
 }
 

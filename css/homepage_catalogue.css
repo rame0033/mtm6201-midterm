@@ -126,6 +126,10 @@
     padding-bottom: 1rem;
 }
 
+.arrivecards{
+    padding: 0 1rem;
+}
+
 /* Hover state on image cards */
 .arrivecards a:hover,
 .favecard a:hover {
@@ -196,7 +200,7 @@
 .youngs {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem 2rem 1rem 2rem;
     margin-bottom:-2rem;
 }
 

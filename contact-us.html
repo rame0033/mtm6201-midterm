@@ -22,9 +22,9 @@
         <header>
             <div class="masthead">
                 <!-- Logo -->
-                <div class="logowrap">
-                    <a href="index.html">
-                        <img src="images/logos/logo_fashion.svg" alt="Fashion Logo"></a>
+                <div itemscope itemtype="https://schema.org/Organization" class="logowrap">
+                    <a itemprop="url" href="index.html">
+                        <img itemprop="logo" src="images/logos/logo_fashion.svg" alt="Fashion Logo"></a>
                 </div>
 
                 <!-- Adding checkbox prompt for hamburger menu -->
@@ -54,10 +54,10 @@
         <div class="hearfromyou">
             <div class="contacttxt">
                 <h3>You may reach us through our email or phone.</h3>
-                <p><span>Email:</span> <a href="#">hello@fashion.com</a> <br>
-                    <span>Telephone:</span> 343-123-4567</p>
+                <p><span class="category">Email:</span> <a href="#">hello@fashion.com</a> <br>
+                    <span class="category">Telephone:</span> 343-123-4567</p>
                     <h3> Or you can go to our physical store </h3>
-                    <p><span>Address:</span> 1385 Woodroffe Avenue, Ottawa, Ontario, K2G 1V8</p>
+                    <p itemscope itemtype="https://schema.org/PostalAddress"><span class="category">Address:</span> <span itemprop="streetAddress">1385 Woodroffe Avenue</span>, <span itemprop="addressLocality">Ottawa</span>, <span itemprop="addressRegion">Ontario</span>, <span itemprop="postalCode">K2G 1V8</span></p>
                 </div>
                 <div class="map">
                     <h3>Find Us</h3>

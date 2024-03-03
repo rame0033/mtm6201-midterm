@@ -67,29 +67,11 @@
     transition: all 0.2s ease;
 }
 
-/* To animate underline on hover */
-.navbar a::after{
-    content: '';
-    position:absolute;
-    width: 0;
-    height: 5px;
-    bottom: 0; /*To position underline at the bottom of the text */
-    left: 0;
-    background: #000000;
-    transition: width 0.2s ease;
-}
-
-/* LOve HAte */
-.navbar a:hover::after{
-    width:100%;
-}
-
 .navbar a:focus,
 .navbar a:active {       
     color: white;
     background: black;
     font-weight: bold;
-    border-radius: 10px 10px 0 0;
 }
 
 /*********
@@ -269,6 +251,29 @@ footer{
     .navbar a {
         margin-left: 2.5em;
     }
+
+    /* To animate underline on hover */
+.navbar a::after{
+    content: '';
+    position:absolute;
+    width: 0;
+    height: 5px;
+    bottom: 0; /*To position underline at the bottom of the text */
+    left: 0;
+    background: #000000;
+    transition: width 0.2s ease;
+}
+
+/* Hover animation for larger screens */
+.navbar a:hover::after{
+    width:100%;
+}
+
+/* Focus and activr styles for larger screens */
+.navbar a:focus,
+.navbar a:active {       
+    border-radius: 10px 10px 0 0;
+}
 
     /* FOOTER */
     footer{

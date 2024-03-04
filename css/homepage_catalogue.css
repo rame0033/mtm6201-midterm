@@ -550,7 +550,7 @@
     /* Displays payday banner hero img */
     .paydaypic {
         display: flex;
-        width: 60%;
+        width: 53%;
     }
 
     .paydaypic picture img {

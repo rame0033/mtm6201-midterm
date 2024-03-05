@@ -108,11 +108,13 @@
 
 /* Styling card text */
 .arrivecards a,
+.cat_cards a,
 .favecard a {
     color: black;
 }
 
 .arrivecards a,
+.cat_cards a,
 .favecard a {
     padding: 1rem;
     transition: transform 0.3s ease;
@@ -120,6 +122,7 @@
 
 /* Setting the width for card img */
 .new-arrivals picture img,
+.cat_cards picture img,
 .favecard picture img {
     width: 100%;
     border-radius: 10px;
@@ -132,6 +135,7 @@
 
 /* Hover state on image cards */
 .arrivecards a:hover,
+.cat_cards a:hover,
 .favecard a:hover {
     opacity: 0.5;
 }
@@ -198,12 +202,18 @@
 
 .youngs {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto -2rem auto;
     padding: 2rem 2rem 1rem 2rem;
-    margin-bottom:-2rem;
 }
 
-.favecard {
+.cat_cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.favecard,
+.cat_cards {
     display: flex;
     flex-direction: column;
 }
@@ -445,7 +455,8 @@
     }
 
     /* Styling text on 'favorite' section */
-    .favecard h3 {
+    .favecard h3,
+    .cat_cards h3 {
         font-size: 1.7rem;
     }
 
@@ -453,11 +464,13 @@
         line-height: 2rem;
     }
 
-    .favecard .title p {
+    .favecard .title p,
+    .cat_cards .title p {
         font-size: 1.5rem;
     }
 
-    .favecard .arrow i {
+    .favecard .arrow i,
+    .cat_cards .arrow i {
         font-size: 2.5rem;
     }
 
@@ -534,15 +547,17 @@
         object-fit: contain;
     }
 
-    .arrivecards {
+    .arrivecards,
+    .cat_cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 0.8rem 0;
+        padding: 0.8rem 1rem;
         margin-bottom: 1rem;
     }
 
         /* Hover state on image cards for larger screens*/
 .arrivecards a:hover,
+.cat_cards a:hover,
 .favecard a:hover {
     transform: scale(1.1);
 }

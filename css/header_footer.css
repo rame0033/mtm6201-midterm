@@ -1,30 +1,30 @@
 /* Adding skip links */
-.skip-links{
+.skip-links {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-      
-  /* Styling skip link hidden */
-  .skip-links a{
+}
+
+/* Styling skip link hidden */
+.skip-links a {
     position: absolute;
     top: -3em;
     right: 3em;
     background-color: black;
-    color:white;
+    color: white;
     padding: .5em 1em;
     font-weight: bold;
-  }
-  
-  .skip-links a:focus{
-    top: 0;
-  } 
+}
 
-  /***********
+.skip-links a:focus {
+    top: 0;
+}
+
+/***********
      HEADER  
   ***********/
 
-  /* Styling the logo nav wrap */
+/* Styling the logo nav wrap */
 .masthead {
     display: flex;
     max-width: 1200px;
@@ -34,41 +34,41 @@
 }
 
 /* Flex grow on logo to nav */
-.logowrap{
-    flex:1;
+.logowrap {
+    flex: 1;
 }
 
-.logowrap img{
-    width:40%;
+.logowrap img {
+    width: 40%;
 }
 
 /* Styling the icon */
 
-.icon{
-    font-size:2em;
+.icon {
+    font-size: 2em;
     cursor: pointer;
     display: none;
-    right:0;
+    right: 0;
 }
 
 /* Hiding the checkbox input */
-#check{
+#check {
     display: none;
 }
 
 /* Styling nav menu */
-.navbar a{
+.navbar a {
     position: relative;
     justify-content: space-around;
     text-align: center;
-    padding:0.5em;
-    font-size:1.25em;
+    padding: 0.5em;
+    font-size: 1.25em;
     color: #000000;
     transition: all 0.2s ease;
 }
 
 .navbar a:focus,
-.navbar a:active {       
+.navbar a:active {
     color: white;
     background: black;
     font-weight: bold;
@@ -78,109 +78,109 @@
  FOOTER
 *********/
 
-footer{
+footer {
     background-color: #000000;
-    padding:1rem 1rem 5rem 1rem;
-    height:27rem;
+    padding: 1rem 1rem 5rem 1rem;
+    height: 27rem;
 }
 
-.footwrap{
+.footwrap {
     max-width: 1200px;
-    padding:1rem;
-    margin:0 auto;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 /* Font-color footer */
 .fashion-slugLine h4,
 .column1 h3,
-.row2 h3{
-    color:#ffffff;
+.row2 h3 {
+    color: #ffffff;
 }
 
 .fashion-slugLine p,
 .column1 a,
-.row2 a{
+.row2 a {
     color: #A19E9B;
 }
 
 /* Styling socmed icons */
-.socmed{
+.socmed {
     display: flex;
-    padding:1rem 0;
-    gap:5px;
+    padding: 1rem 0;
+    gap: 5px;
 }
 
-.socmed li{
+.socmed li {
     font-size: 1rem;
     text-align: center;
     width: 20px;
-    color:#000000;
+    color: #000000;
     background-color: #EBD96B;
     padding: 5px;
     border-radius: 5px;
 }
 
 /* font-color for icons */
-.socmed a{
+.socmed a {
     color: #000000;
 }
 
 /* Gap between headings and contents */
-.fashion-slugLine h4{
+.fashion-slugLine h4 {
     padding-bottom: 0.25rem;
 }
 
 .column1 h3,
-.row2 h3{
+.row2 h3 {
     padding-bottom: 0.5rem;
 }
 
 .column1,
 .column2,
-.column3{
+.column3 {
     padding-bottom: 0.5rem;
 }
 
 .column1 li,
-.row2 li{
+.row2 li {
     line-height: 1.3rem;
 }
 
 /* Adds style for footer skip link */
-    
+
 .skip-link-footer {
     position: absolute;
     margin-top: 0.8em;
-    left:3%;
-    border:1px solid #EBD96B;
+    left: 3%;
+    border: 1px solid #EBD96B;
     text-decoration: none;
     color: #EBD96B;
     padding: .5em 1em;
     font-weight: bold;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-  }   
-  
-  /* Hover state */
-  .skip-link-footer:hover{
+}
+
+/* Hover state */
+.skip-link-footer:hover {
     text-decoration: underline;
-  }
-  
-  /* Active state */
-  .skip-link-footer:focus{
+}
+
+/* Active state */
+.skip-link-footer:focus {
     text-decoration: underline;
     background-color: #EBD96B;
-    color:black;
-  }
-  
+    color: black;
+}
+
 /* LOGO-NAV MOBILE */
 
-  /* Styling the nav menu for mobile */
-  @media screen and (max-width:919px){
+/* Styling the nav menu for mobile */
+@media screen and (max-width:919px) {
     #check {
         display: none;
     }
-    
+
     .navbar a {
         display: block;
         text-align: center;
@@ -189,8 +189,8 @@ footer{
         color: black;
     }
 
-      /* Styling the hamburger and close icon */
-      .icon {
+    /* Styling the hamburger and close icon */
+    .icon {
         display: block;
         padding-top: 4px;
     }
@@ -198,15 +198,15 @@ footer{
     #check:checked~.icon #menu-icon {
         display: none;
     }
-    
+
     .icon #close {
         display: none;
     }
-    
+
     #check:checked~.icon #close {
         display: block;
     }
-    
+
     /* Styling the navigation bar on click */
     #menu {
         position: absolute;
@@ -218,7 +218,7 @@ footer{
         transition: .3s ease;
         overflow: hidden;
     }
-    
+
     #check:checked~#menu {
         height: 9rem;
     }
@@ -230,17 +230,17 @@ footer{
 
     /* HEADER NAV */
 
-    .logowrap img{
-        max-width:40%;
+    .logowrap img {
+        max-width: 40%;
         display: flex;
         align-items: center;
     }
 
     /* Hiding hamburger icon */
-    .icon{
+    .icon {
         display: none;
     }
-    
+
     /* Nav bar for larger screens */
     .navbar {
         margin-top: 8px;
@@ -253,53 +253,55 @@ footer{
     }
 
     /* To animate underline on hover */
-.navbar a::after{
-    content: '';
-    position:absolute;
-    width: 0;
-    height: 5px;
-    bottom: 0; /*To position underline at the bottom of the text */
-    left: 0;
-    background: #000000;
-    transition: width 0.2s ease;
-}
+    .navbar a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 5px;
+        bottom: 0;
+        /*To position underline at the bottom of the text */
+        left: 0;
+        background: #000000;
+        transition: width 0.2s ease;
+    }
 
-/* Hover animation for larger screens */
-.navbar a:hover::after{
-    width:100%;
-}
+    /* Hover animation for larger screens */
+    .navbar a:hover::after {
+        width: 100%;
+    }
 
-/* Focus and activr styles for larger screens */
-.navbar a:focus,
-.navbar a:active {       
-    border-radius: 10px 10px 0 0;
-}
+    /* Focus and activr styles for larger screens */
+    .navbar a:focus,
+    .navbar a:active {
+        border-radius: 10px 10px 0 0;
+    }
 
     /* FOOTER */
-    footer{
+    footer {
         height: 10.1rem;
     }
+
     /* Max-width for fashion slug line */
     .fashion-slugLine {
         max-width: 300px;
         flex-grow: 1;
     }
 
-    .fashion-slugLine p{
+    .fashion-slugLine p {
         line-height: 1.025rem;
     }
 
     /* Horizontal display for footer */
-    .footwrap{
+    .footwrap {
         display: flex;
         gap: 16%;
     }
 
     .row1,
-    .row2{
+    .row2 {
         display: flex;
         flex-direction: row;
-        gap:10%;
+        gap: 10%;
     }
 
     .skip-link-footer {

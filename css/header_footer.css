@@ -189,12 +189,13 @@ footer {
         color: black;
     }
 
-    /* Styling the hamburger and close icon */
+    /* Positioning the nav icon */
     .icon {
         display: block;
         padding-top: 4px;
     }
 
+    /* Hides the icon on larger screens */
     #check:checked~.icon #menu-icon {
         display: none;
     }

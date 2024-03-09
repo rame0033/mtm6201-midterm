@@ -39,7 +39,9 @@
 }
 
 .logowrap img {
-    width: 40%;
+    width: 11rem;
+    display: flex;
+    align-items: center;
 }
 
 /* Styling the icon */
@@ -232,9 +234,7 @@ footer {
     /* HEADER NAV */
 
     .logowrap img {
-        max-width: 40%;
-        display: flex;
-        align-items: center;
+       
     }
 
     /* Hiding hamburger icon */

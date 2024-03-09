@@ -133,7 +133,7 @@ input:focus {
   font: 1rem 'Poppins', sans-serif;
   background: black;
   padding: 0.8rem;
-  border: 1px solid;
+  border: 1px solid black;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease-out;
@@ -146,7 +146,7 @@ input:focus {
 
 .sign-up button:hover {
   background-color: #EBD96B;
-  border: none;
+  border: 1px solid #EBD96B;
   color: black;
 }
 

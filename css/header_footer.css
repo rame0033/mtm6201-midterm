@@ -197,7 +197,7 @@ footer {
         padding-top: 4px;
     }
 
-    /* Hides the icon on larger screens */
+    /* Checkbox toggle icon on check and uncheck*/
     #check:checked~.icon #menu-icon {
         display: none;
     }

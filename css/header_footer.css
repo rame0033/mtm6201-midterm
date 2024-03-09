@@ -232,11 +232,6 @@ footer {
 @media screen and (min-width:920px) {
 
     /* HEADER NAV */
-
-    .logowrap img {
-       
-    }
-
     /* Hiding hamburger icon */
     .icon {
         display: none;

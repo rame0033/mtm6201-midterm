@@ -7,7 +7,7 @@
   background-image: url(../images/vector8.svg);
   background-repeat: no-repeat;
   background-size: 185px 45px;
-  background-position: bottom 5% right 0;
+  background-position: calc(100% - 2%) 100%;
 }
 
 /* Style for 'Contact' and 'Sign Up' heading */
@@ -19,7 +19,7 @@
   background-image: url(../images/vector8.svg);
   background-repeat: no-repeat;
   background-size: 185px 45px;
-  background-position: bottom 5% right 70px;
+  background-position: calc(100% - 15%) 85%;
 }
 
 /* CONTACT PAGE */
@@ -204,12 +204,6 @@ input:focus {
 
 /* Style for larger screens */
 @media screen and (min-width:1024px) {
-
-  /* Positioning SVG for 'Contact' and 'Sign Up' heading */
-  .header_wrap .heading2,
-  .header_wrap .heading3 {
-    background-position: bottom 5% right 10px;
-  }
 
   /* CONTACT US PAGE */
   .hearfromyou {

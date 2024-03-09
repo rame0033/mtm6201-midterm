@@ -287,16 +287,20 @@
 .newssign-up {
     display: flex;
     justify-content: center;
-    padding-top: 1rem;
+    padding: 0.5rem;
+    width:50%;
+    margin: 1rem auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    gap:2%;
 }
 
 .newssign-up input {
     font-family: 'Poppins', sans-serif;
     padding: 0.5rem;
-    border: none;
-    width: 60%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border:none;
+    border-radius:10px;
+    width: 70%;
 }
 
 .newssign-up button {
@@ -304,10 +308,9 @@
     font-family: 'Poppins', sans-serif;
     background-color: black;
     font-size: 1rem;
-    padding: 0.8rem;
+    padding: 0.8rem 2rem;
     border: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     transition: all 0.2s ease-out;
 }
 

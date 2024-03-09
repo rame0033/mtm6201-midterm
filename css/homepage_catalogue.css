@@ -562,7 +562,7 @@
 .arrivecards a:hover,
 .cat_cards a:hover,
 .favecard a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
     /* Displays payday banner hero img */

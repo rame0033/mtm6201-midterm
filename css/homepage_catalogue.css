@@ -79,7 +79,7 @@
 }
 
 .logo-wrap img {
-    width: 100px;
+    width: 6rem;
 }
 
 /*NEW ARRIVALS*/
@@ -91,18 +91,18 @@
 }
 
 .subheading {
-    max-width: 500px;
+    max-width: 23rem;
     background-image: url('../images/vector8.svg');
     background-repeat: no-repeat;
-    background-size: 121px;
+    background-size: 7rem;
 }
 
 .new-arrivals .subheading {
-    background-position: bottom 0 right 216px;
+    background-position: calc(100% - 36%);
 }
 
 .youngs .subheading {
-    background-position: bottom 0 right 130px;
+    background-position: calc(100% - 3%) 78%;
 
 }
 

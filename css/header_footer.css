@@ -241,11 +241,13 @@ footer {
     .navbar {
         margin-top: 8px;
         display: flex;
+        gap: 1rem;
     }
 
     /* Add spacing on navigation links */
     .navbar a {
-        margin-left: 2.5em;
+        display: block;
+        width: 7.5rem;
     }
 
     /* To animate underline on hover */
@@ -253,7 +255,7 @@ footer {
         content: '';
         position: absolute;
         width: 0;
-        height: 5px;
+        height: 3px;
         bottom: 0;
         /*To position underline at the bottom of the text */
         left: 0;
